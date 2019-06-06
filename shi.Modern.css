@@ -1,3 +1,292 @@
+/* -------------------- Настройки -------------------- */
+
+
+/* Цвета */
+:root {
+
+  /*　Основные цвета */
+  
+  --c1: 64, 191, 128; /* Основной цвет темы и ссылок */
+  --c2: 82, 224, 153; /* Цвет ссылок и некоторых эллементов при наведении */
+  --c3: 0, 255, 128; /* Цвет ссылок и некоторых эллементов при нажатии */
+
+  /*　Цвета фона */
+  
+  --b1: #f5f5f5; /*　Цвет фона страницы */
+  --b2: #fff; /*　Цвет фона блоков */
+  --b3: #ddd; /*　Цвет границ блоков */
+  
+  /*　Цвета текста */
+  
+  --t1: #333; /*　Цвет заголовков и кнопок */
+  --t2: #333; /*　Цвет текста */
+  --t3: #999; /*　Цвет серого текста */
+  
+  /*　Цвета затемнения (используется в некоторых блоках и кнопках) */
+  
+  --d1: rgba(0, 0, 0, .1); /*　Цвет сильного затемнения */
+  --d2: rgba(0, 0, 0, .06); /*　Цвет слабого затемнения */
+}
+
+
+
+/* Фоновая картинка */
+body {
+  background-image: url()!important;
+}
+
+
+
+/* Псевдо аватарка */
+.p-profiles .profile-head .c-brief .avatar {
+  background-image: url() !important; /* Ссылка на картинку */
+  height: 538px; /* Высота изображения */
+}
+
+
+
+/* Отступы верхнего меню от краев страницы */
+.l-top_menu-v2 {
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+}
+/* Отступы верхнего меню от краев страницы */
+
+
+
+/* Изменить растояние между графиками аниме и манги (отступы от полоски между ними) */
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime:after {
+  margin-top: 12px !important; /* Отступ сверху */
+  margin-bottom: 20px !important; /* Отступ снизу */
+}
+
+
+
+/* Переименовывание блоков */
+
+
+/* Время за аниме и мангой */
+.p-profiles-show .lifetime .title .label:before {
+  content: 'Время за анмие и мангой';
+}
+/* Английский вариант */
+.p-profiles-show[data-locale='en'] .lifetime .title .label:before {
+  content: 'Time spent';
+}
+
+
+/* Активность на сайте */
+.p-profiles .profile-head .c-info .c-additionals b:after {
+  content: 'Активность';
+}
+/* Английский вариант */
+.p-profiles[data-locale='en'] .profile-head .c-info .c-additionals b:after {
+  content: 'Activity';
+}
+
+
+/* Блок "Обо мне" */
+.p-profiles-show .profile-content .about.block .subheadline:before {
+  content: 'Информация';
+}
+/* Английский вариант */
+.p-profiles-show[data-locale='en'] .profile-content .about.block .subheadline:before {
+  content: 'Information';
+}
+
+
+
+/* Дополнительные цветные элементы в профиле */
+
+
+/* Полоска аниме */
+.b-stats_bar.anime .bar .first {
+  background: linear-gradient(22deg, #40bf80, #bbff99);
+}
+.b-stats_bar.anime .bar .second {
+  background: linear-gradient(22deg, #e6e6e6, #ccc);
+}
+.b-stats_bar.anime .bar .third {
+  background: linear-gradient(112deg, #ccc, #b3b3b3);
+}
+
+
+/* Полоска манги */
+.b-stats_bar.manga .bar .first {
+  background: linear-gradient(22deg, #ffd400, #ff9);
+}
+.b-stats_bar.manga .bar .second {
+  background: linear-gradient(22deg, #e6e6e6, #ccc);
+}
+.b-stats_bar.manga .bar .third {
+  background: linear-gradient(112deg, #ccc, #b3b3b3);
+}
+
+
+/* Полоска активности */
+.b-stats_bar.lifetime .bar .first {
+  background: linear-gradient(22deg, #40bf80, #ffee99);
+}
+.b-stats_bar.lifetime .bar .third {
+  background: linear-gradient(22deg, #e6e6e6, #ccc);
+}
+
+/* Вертикальные полоски */
+.p-profiles-show .profile-content .activity .bar.vertical .line .bar-container .bar {
+  background: linear-gradient(0deg, #40bf80, #ffee99) !important;
+}
+
+
+/* Полоски ачивок */
+.b-achievement .c-about .progress .bar,
+.b-achievement .about .progress .bar {
+  background: linear-gradient(22deg, #40bf80, #bbff99);
+}
+
+
+
+/* Вернуть стандартные эллементы /*
+Удалите нужное правило чтобы вернуть определённый эллемент */
+
+
+/* Клубы */
+.p-profiles-show .profile-content .c-right > .cc-2a > .c-column:last-child {
+    display: none !important;
+}
+
+.p-profiles-show .cc-friends {
+  margin: 14px 0 -4px !important;
+}
+/* Клубы */
+
+
+/* Избранное */
+.p-profiles-show .profile-content .cc-2 > .c-column > .block:last-child {
+    display: none !important;
+}
+/* Избранное */
+
+
+/* Вертикальные полоски активности */
+.p-profiles-show .profile-content .activity {
+  display: none !important;
+}
+.p-profiles-show .profile-content .c-column.c-left {
+  padding: 20px;
+}
+/* Вертикальные полоски активности */
+
+
+
+/* Убрать эллементы /*
+Добавьте к свободной звёздочке ( * ) слэш ( */ ) чтобы убрать нужный вам эллемент */
+
+
+/* История *
+.p-profiles .profile-head .c-history.x3 {
+  display: none !important;
+}
+/* История */
+
+
+/* Полоска аниме *
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime {
+  display: none !important;
+}
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga {
+  margin-top: 0;
+}
+/* Полоска аниме */
+
+
+/* Полоска манги *
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga {
+  display: none !important;
+}
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime:after {
+  display: none;
+}
+/* Полоска манги */
+
+
+/* Активность *
+.p-profiles .profile-head .c-info .c-additionals {
+  display: none !important;
+}
+/* Активность */
+
+
+/* Друзья *
+.p-profiles-show .profile-content .c-right > .cc-2a > .c-column:nth-child(2n+1) {
+  display: none !important;
+}
+/* Друзья */
+
+
+/* Клубы *
+.p-profiles-show .profile-content .c-right > .cc-2a > .c-column:last-child {
+  display: none !important;
+}
+/* Клубы */
+
+
+/* Избранное *
+.p-profiles-show .profile-content > .cc-2 > .c-column > .block:last-child {
+  display: none !important;
+}
+/* Избранное */
+
+
+/* Полоска активности *
+.p-profiles-show .profile-content .lifetime {
+  display: none !important;
+}
+.p-profiles-show .profile-content .activity {
+  margin-top: 0;
+}
+/* Полоска активности */
+
+
+/* Вертикальные полоски активности *
+.p-profiles-show .profile-content .activity {
+  display: none !important;
+}
+.p-profiles-show .profile-content .c-column.c-left {
+  padding: 20px;
+}
+/* Вертикальные полоски активности */
+
+
+/* Ачивки *
+.p-profiles-show .profile-content .block.achievements {
+  display: none !important;
+}
+/* Ачивки */
+
+
+/* Блок "Обо мне" *
+.p-profiles-show .profile-content .about.block {
+  display: none !important;
+}
+/* Блок "Обо мне" */
+
+
+/* Лента *
+.p-profiles-show .profile-content > .block:last-child {
+  display: none !important;
+}
+/* Лента */
+
+
+/* -------------------- Настройки -------------------- */
+
+
+
+
+
+
+
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Ubuntu';
@@ -1483,7 +1772,7 @@ header.head a.edit:active,
 }
 
 .l-footer:before {
-  content: 'shi.Modern test_1.99';
+  content: 'shi.Modern test_1.0.1';
   display: block;
   float: left;
   position: static;
