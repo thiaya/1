@@ -1483,7 +1483,7 @@ header.head a.edit:active,
 }
 
 .l-footer:before {
-  content: 'shi.Modern test_1.4';
+  content: 'shi.Modern test_1.0.1';
   display: block;
   float: left;
   position: static;
@@ -6812,10 +6812,9 @@ a.b-button {
 }
 
 
-/* ---------------------------------------------------------------- */
-/* Прочее */
 
 
+/* -------------------- Прочее -------------------- */
 
 /* Новости и уведомления в два столбца */
 .p-messages-index .b-topic > .b-comments {
@@ -7028,23 +7027,3 @@ a.b-button {
   height: 6px;
 }
 /* Скроллбар */
-
-
-
-/* ---------------------------------------------------------------- */
-/* Ваши наработки */
-
-/* Если у вас закрытый список, то уберите пробел между слешем и звездой -> * /
-.p-profiles .profile-head .b-stats_bar .stat_names .stat_name {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 10px;
-  color: var(--t1);
-  cursor: pointer;
-  padding: 4px 8px;
-  margin: 6px;
-  border: 1px solid var(--b3);
-  border-radius: 2px;
-  transition: .25s ease;
-}
-*/
